@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG PSG OWL SYSTEM</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <label for="menu"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#PSG">Podemos Ser Grandes</a></li>
+                    <li><a href="#about">Volvamos a Ser Grandes</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+            
+        </div>
+        <div class="header-content container">
+            <div class="header-txt" id="PSG">
+                <h1>Podemos Ser Grandes</h1>
+                <p>
+                    Podemos Ser Grandes, programa diseñado y estructurado para niños y niñas entre los 5 a 16 años con dos enfoques creación de habitos saludables, preacticas recreativass y direccionamiento a deporte de alto rendimiento.
+                </p>
+            </div>
+            <div class="header-img">
+                <img src="https://static.wixstatic.com/media/466dcb_8166153ee8834a819abae7ad07d5ef90~mv2.jpg/v1/fill/w_460,h_440,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%2520Image%25202020-06-05%2520at%25208_33_edited.jpg" alt="Podemos">
+            </div>
+        </div>
+    </header>
+    
+    <section class="about" id="about">
+        <div class="about-content container">
+            <div class="about-img">
+                <img src="https://static.wixstatic.com/media/466dcb_cd0c385860fc45869894fcf9de770e1f~mv2.jpg/v1/crop/x_0,y_0,w_1001,h_958/fill/w_602,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/60719524-c330-49b7-99e5-ba7818617f96_jfi.jpg" alt="Volvamos">
+            </div>
+            <div class="about-txt">
+                <h2>Volvamos a Ser Grandes</h2>
+                <p>
+                    Programa diseñado y estructurado para el adulto mayor con enfermedades crónicas y en general, por medio de actividad física y recreación dirigida se mantenga una calidad de vida con un nivel de espectativa alto.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="information" id="Contacto">
+        <div class="form-content">
+                <h2>¡Contáctanos!</h2>
+                <input type="text" name="name" placeholder="Nombre">
+                <input type="phone" name="phone" placeholder="Teléfono">
+                <input type="email" name="email" placeholder="Correo">
+                <textarea name="Message" id="Message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                <input class="btn-3" type="submit" value="ENVIAR"> 
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="link-img">
+                    <img src="{% static 'images/PSG.png' %}" alt="Logo PSG">
+                    <div class="Socials-2">
+                        <img src="{% static 'images/r1.png' %}" alt="instagram"></img>
+                        <img src="{% static 'images/r2.png' %}" alt="facebook"></img>
+                        <img src="{% static 'images/r3.png' %}" alt="whatsapp"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; Todos los derechos reservados Fundación Podemos Ser Grandes</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
